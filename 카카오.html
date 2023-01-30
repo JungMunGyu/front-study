@@ -1,0 +1,370 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Kakao</title>
+  <mata charset="utf-8">
+  <link rel = "stylesheet" href="./header.css">
+  <link rel = "stylesheet" href="./footer.css">
+  <link rel = "stylesheet" href="./main1.css">
+  <link rel = "stylesheet" href="./main2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <style media="screen">
+    body{
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: black;
+      font-family: 'Quicksand', sans-serif;
+    }
+    a{
+      all: unset;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="Header-logo">
+    <h4 onclick = "location.href='https://www.kakao.com'">Kakao</h4>
+  </div>
+  <div class="Header-nav">
+    <nav>
+      <ul class="Header-nav-design-ul">
+        <li>
+          <a class = "Header-nav-design-a" href="https://www.kakaocorp.com/page/kakao/kakaoCulture">카카오</a>
+        </li>
+        <li>
+          <a class = "Header-nav-design-a" href="https://www.kakaocorp.com/page/news">뉴스</a>
+        </li>
+        <li >
+          <a class = "Header-nav-design-a" href="https://www.kakaocorp.com/page/service/tech">기술과 서비스</a>
+        </li>
+        <li >
+          <a class = "Header-nav-design-a" href="https://www.kakaocorp.com/page/responsible/esg">약속과 책임</a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+  <div class="Header-icon">
+    <button id = "button-search"type="button" name="button-search" class = "button-icon">
+      <div>
+      <svg data-v-ae75f7f2 viewBox="0 0 28 28" class = "icon-search">
+        <g data-v-ae75f7f2 fill = "none" fill-rule="evenodd">
+          <g data-v-ae75f7f2 stroke-width = "1.6">
+            <g data-v-ae75f7f2 transform="translate(-308 -15) translate(312 20)">
+              <circle data-v-ae75f7f2 cx="8.944" cy="8.944" r="8.944"></circle>
+              <path data-v-ae75f7f2 d="M14.987 14.987L21.017 21.017"></path>
+            </g>
+          </g>
+        </g>
+      </svg>
+      </div>
+    </button>
+
+    <button id = "button-language" type="button" name="button-language" class = "button-icon">
+      <svg data-v-41fcfff3 viewBox="0 0 24 24" class = "icon-search">
+        <g data-v-41fcfff3 fill = "none" fill-rule="evenodd">
+          <g data-v-41fcfff3 stroke-width = "1.35">
+            <g data-v-41fcfff3 transform="translate(-1402 -22) translate(1359 24) translate(44) translate(2 2)">
+              <path data-v-41fcfff3 d="M19.353 9.914c0 5.213-4.226 9.438-9.438 9.438-5.213 0-9.438-4.225-9.438-9.438C.477 4.702 4.702.477 9.915.477c5.212 0 9.438 4.225 9.438 9.437z"></path>
+              <path data-v-41fcfff3 stroke-linejoin="round" d="M13.662 9.914c0 5.213-3.748 9.438-3.748 9.438s-3.747-4.225-3.747-9.438c0-5.212 3.747-9.437 3.747-9.437s3.748 4.225 3.748 9.437z" transform ="translate(-1402 -23) translate(1356 21) translate(44) translate(2 2)"></path>
+              <path data-v-41fcfff3 d="M.876 7.018L18.952 7.018M.876 12.811L18.952 12.811" transform ="translate(-1402 -24) translate(1356 23) translate(44) translate(2 2)"></path>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </button>
+
+    <button id = "button-dark" type="button" name="button-dark" class = "button-icon" onclick="Change_color();">
+      <svg data-v-9f42629e viewBox="0 0 24 24" class = "icon-search">
+        <g data-v-9f42629e fill = "none" fill-rule="evenodd" stroke-linejoin="round">
+          <g data-v-9f42629e stroke-width = "1.5">
+            <g data-v-9f42629e transform="translate(-308 -16) translate(312 20)">
+              <path data-v-9f42629e d="M16.086 13.417c-5.013 0-9.076-4.04-9.076-9.023 0-1.596.42-3.093 1.152-4.394C3.58.456 0 4.3 0 8.977 0 13.961 4.064 18 9.076 18c3.407 0 6.372-1.868 7.924-4.628-.3.03-.605.045-.914.045z" transform="translate(-1344 -24) translate(1246 22) translate(96) translate(4 3)"></path>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </button>
+
+  </div>
+</header>
+
+<main>
+  <section id = "mainContent" class = "inner-main">
+    <div class="main-content">
+      <article class="content-article">
+        <h3 role = "text" class = "tit-main tit home tit-date">
+          <em class = "emph-tit">오늘의 카카오</em>
+          <span class = "txt-tit">1월 30일 월요일 소식입니다</span>
+        </h3>
+        <div class="content-home">
+          <div class="section-home">
+            <div class="wrap-item">
+              <div sticky-offset="{top:181}" sticky-side="top" class="inner-item">
+                <div class="item-card">
+                  <span class = "wrap-cont">
+                    <span class = "info-cate">
+                      <img src="./item-card_icon.png" alt="사진 없음" width="36" height="36" class = "ico-cate">
+                      <span class = "txt-cate">히스토리</span>
+                    </span>
+                    <a href="#" class = "link-item">
+                      <strong class = "tit-card">인공지능이 그린 그림은 창작물일까?</strong>
+                      <span class = "wrap-thumb">
+                        <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/beac9efb018500001.png?type=thumb&opt=C630x472.fwebp" alt="" class = "thumb-img">
+                      </span>
+                    </a>
+                    <span class = "info-card">
+                      <span class = "txt-keyword">#Karlo</span>
+                      <span class = "txt-keyword">#generative AI</span>
+                      <span class = "txt-keyword">#멀티모달AI</span>
+                      <span class = "txt-keyword">#카카오브레인</span>
+                    </span>
+                  </span>
+                  <button type="button" class="btn-share ico-comm">
+                    <svg data-v-f9455140 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico-share">
+                      <g data-v-f9455140 fill="none" fill-rule="evenodd">
+                        <path data-v-f9455140 d="M0 0H24V24H0z" transform="translate(-350 -222) translate(24 192) translate(326 30)"></path>
+                        <g data-v-f9455140 transform="translate(-350 -222) translate(24 192) translate(326 30) translate(10 2)" class="fill">
+                          <circle data-v-f9455140 cx="2" cy="2" r="2"></circle>
+                          <circle data-v-f9455140 cx="2" cy="10" r="2"></circle>
+                          <circle data-v-f9455140 cx="2" cy="18" r="2"></circle>
+                        </g>
+                      </g>
+                    </svg>
+                    공유하기
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="wrap-item">
+              <div transition-duration=".5s" item-selector=".item-card" gutter="36" class="inner-item" style="position: relative; height: 420px;">
+                <div class="item-card card-half item-stock" style="position: absolute; left: 0px; top: 0px;">
+                  <a href="#" data-tiara-layer="Click_Main03" data-tiara-action-name="Click_Main03" class="wrap-content">
+                    <div>
+                      <span class = "info-cate">
+                        <img src="./주가정보.png" alt="" width="36" height="36"class = "ico-cate">
+                        <span class = "txt-cate">주가정보</span>
+                      </span>
+                      <strong class = "tit-card">
+                        <span class = "num-tit">64,700</span>
+                        <span class = "num-info up">
+                          <span class = "info-arr"></span>
+                          1000
+                        </span>
+                      </strong>
+                      <span class = "info-card">2023.01.30 06:00AM</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="item-card card-half" style="position: absolute; left: 333px; top: 0px;">
+                  <a href="#" data-tiara-layer="Click_Main03" data-tiara-action-name="Click_Main03" class="wrap-content">
+                    <div>
+                      <span class = "info-cate">
+                        <img src="./responsible.png" alt="" width="36" height="36"class = "ico-cate">
+                        <span class = "txt-cate">약속과 책임</span>
+                      </span>
+                      <strong class = "tit-card">카카오는 당신과 함께 더 나은 세상을 만듭니다.</strong>
+                      <span class = "info-card">
+                        <span class = "txt-keyward">#약속과책임</span>
+                        <span class = "txt-keyward">#esg</span>
+                        <span class = "txt-keyward">#소셜임팩트</span>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+                <div class="item-card card-half" style="position: absolute; left: 0px; top: 192px; margin-top: 36px;">
+                  <a href="#" data-tiara-layer="Click_Main03" data-tiara-action-name="Click_Main03" class="wrap-content">
+                    <div>
+                      <span class = "info-cate">
+                        <img src="./responsible.png" alt="" width="36" height="36"class = "ico-cate">
+                        <span class = "txt-cate">약속과 책임</span>
+                      </span>
+                      <strong class = "tit-card">
+                        ESG보고서,
+                        <br>
+                        카카오의 약속과 책임
+                      </strong>
+                      <span class = "info-card">
+                        <span class = "txt-keyward">#2021년성과</span>
+                        <span class = "txt-keyward">#ESG보고서</span>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrap-culture">
+            <strong class = "tit-culture">
+              기술과 사람으로 더 나은 세상을 만듭니다.
+            </strong>
+            <a href="https://www.kakaocorp.com/page/kakao/kakaoCulture" data-tiara-layer="Click_Main07" data-tiara-action-name="Click_Main07" class="link-culture">카카오문화 바로가기
+              <svg data-v-d93d847a xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" class="ico-arr">
+                <g data-v-d93d847a fill="none" fill-rule="evenodd">
+                  <g data-v-d93d847a stroke="#FFF" stroke-width="1.5" class="stroke">
+                    <path data-v-d93d847a d="M.625 0L9.846 0 9.846 9.221M9.846 0L.654 9.192" transform="translate(-567 -1210) translate(36 1044) translate(134 54) translate(254 98) translate(20 9) translate(121 4) rotate(45 2.879 10.121)">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <img src="./가로.png" alt="" class="thumb-culture thumb-culture-l">
+            <img src="./세로.png" alt="" class="thumb-culture thumb-culture-s">
+          </div>
+          <div class="wrap-sns">
+            <strong class = "tit-sns" id="tit-sns-color">카카오의 다양한 소식을 구독해보세요.</strong>
+            <ul class = "inner-sns">
+              <li>
+                <a href="https://pf.kakao.com/_ZRQBh" data-tiara-layer="Click_GoTalkCH" data-tiara-action-name="Click_GoTalkCH" target="_blank" class="link-channel">카카오채널 바로가기</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@Kakaobrandmedia" class="link-youtube">유튜브 바로가기</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/kakao.today" class="link-insta"></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/kakao.brandmedia" class="link-facebook"></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/kakaocorp" class="link-linkedin"></a>
+              </li>
+            </ul>
+          </div>
+          <a href="https://www.kakaocorp.com/page/collection" class = "link-collection">카카오 소식 모아보기</a>
+          <input type="image" src="./맨위로.png" onClick="javascript:window.scrollTo(0,0)" alt="맨위로" class = "link-top"/>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer style="border-top: solid 1px #ccc">
+  <div class="inner-footer">
+    <section class = "section-service">
+    <div class="section-service">
+      <div class="wrap-service">
+        <strong class = "tit-service">
+          <a href="#">
+            <span>카카오
+              <svg data-v-d180c69a data-v-15aff456 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" style="display: none;">
+                <g data-v-d180c69a fill="none" fill-rule="evenodd">
+                  <path data-v-d180c69a d="M0 0H9V9H0z" transform="translate(-891 -972) translate(670 145) translate(24 817) translate(142 4) translate(55 6)">
+                  </path>
+                  <path data-v-d180c69a d="M8 3L4.5 6 1 3" transform="translate(-891 -972) translate(670 145) translate(24 817) translate(142 4) translate(55 6)" class = "stroke">
+                  </path>
+                </g>
+              </svg>
+            </span>
+          </a>
+        </strong>
+        <ul class = "list-service">
+          <li class = "list-item"><a href="#"><span>카카오 문화</span></a></li>
+          <li class = "list-item"><a href="#"><span>공동체</span></a></li>
+          <li class = "list-item"><a href="#"><span>히스토리</span></a></li>
+        </ul>
+      </div>
+      <div class="wrap-service">
+        <strong class = "tit-service">
+          <a href="#"><span>뉴스</span></a>
+        </strong>
+      </div>
+      <div class="wrap-service">
+        <strong class = "tit-service">
+          <a href="#"><span>기술과 서비스</span></a>
+        </strong>
+        <ul class = "list-service">
+          <li class = "list-item"><a href="#"><span>기술</span></a></li>
+          <li class = "list-item"><a href="#"><span>서비스</span></a></li>
+        </ul>
+      </div>
+      <div class="wrap-service">
+        <strong class = "tit-service">
+          <a href="#"><span>약속과 책임</span></a>
+        </strong>
+        <ul class = "list-service">
+          <li class = "list-item"><a href="#"><span>ESG</span></a></li>
+          <li class = "list-item"><a href="#"><span>소셜임팩트</span></a></li>
+          <li class = "list-item"><a href="#"><span>디지털 권리</span></a></li>
+          <li class = "list-item"><a href="#"><span>AI윤리</span></a></li>
+        </ul>
+      </div>
+      <div class="wrap-service">
+        <strong class = "tit-service">
+          <a href="#"><span>투자정보</span></a>
+        </strong>
+        <ul class = "list-service">
+          <li class = "list-item"><a href="#"><span>기업지배구조</span></a></li>
+          <li class = "list-item"><a href="#"><span>주가정보</span></a></li>
+          <li class = "list-item"><a href="#"><span>재무정보</span></a></li>
+          <li class = "list-item"><a href="#"><span>IR행사</span></a></li>
+          <li class = "list-item"><a href="#"><span>공시정보</span></a></li>
+          <li class = "list-item"><a href="#"><span>공고</span></a></li>
+        </ul>
+      </div>
+      <div class="group-service">
+        <div class="wrap-service">
+          <strong class = "tit-service">
+            <a href="#"><span>고객센터</span></a>
+          </strong>
+          <ul class = "list-service">
+            <li class = "list-item"><a href="#"><span>카카오 고객센터</span></a></li>
+            <li class = "list-item"><a href="#"><span>Daum 고객센터</span></a></li>
+          </ul>
+        </div>
+        <strong class="tit-service"><a href="#"><span>인재영입</span></a></strong>
+        <strong class="tit-service"><a href="#"><span>카카오계정</span></a></strong>
+      </div>
+    </div>
+    </section>
+
+    <section class = "section-down">
+      <div class="section-down">
+      <div class="group-info">
+        <div class="wrap-info"><a href="#">이용약관</a></div>
+        <div class="wrap-info"><a href="#"> 위치기반서비스이용약관</a></div>
+        <div class="wrap-info"><a href="#">개인정보처리방침</a></div>
+        <div class="wrap-info"><a href="#">운영정책</a></div>
+        <div class="wrap-info"><a href="#">청소년보호정책</a></div>
+        <div class="wrap-info"><a href="#">브랜드보호정책</a></div>
+        <div class="wrap-info"><a href="#">권리침해신고안내</a></div>
+        <div class="wrap-info"><a href="#">공지사항</a></div>
+        <div class="wrap-info"><a href="#">사이버윤리실</a></div>
+        <div class="wrap-info"><a href="#">Contact. Us</a></div>
+      </div>
+      <div class="wrap-relation">
+        <strong class = "tit-relation">
+          <a href="javascript" role="button">관련사이트
+            <svg data-v-75150fa2 data-v-15aff456 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" class = "icon-plus">
+              <path data-v-75150fa2 d="M6.222 0H7.7780000000000005V14H6.222z" transform="translate(-1414 -643) translate(80 245) translate(1334 398)"></path>
+              <path data-v-75150fa2 d="M6.222 0H7.7780000000000005V14H6.222z" transform="translate(-1414 -643) translate(80 245) translate(1334 398) rotate(90 7 7)"></path>
+            </svg>
+          </a>
+        </strong>
+      </div>
+      <small class = "txt-cp">@ <a href="https://www.kakaocorp.com/page">Kakao Corp.</a> All rights reserved.</small>
+    </div>
+    </section>
+
+  </div>
+</footer>
+
+<script type="text/javascript">
+  function Change_color(){
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('header').style.color='white';
+    document.querySelector('footer').style.color='white';
+    document.querySelector('h3').style.color='white';
+    document.getElementById('tit-sns-color').style.color='black';
+    document.getElementById('tit-sns-color').style.backgroundColor='white';
+  }
+</script>
+</body>
+</html>

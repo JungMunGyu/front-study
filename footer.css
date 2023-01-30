@@ -1,0 +1,102 @@
+.section-service{
+  display: block;
+  clear: both;
+  content: "";
+  height: 210px;
+}
+.group-service{
+  font-size: 14px;
+  float: left;
+  width: 16.666%;
+}
+.wrap-service{
+  font-size: 14px;
+  float: left;
+  width: 16.666%;
+}
+.group-service .wrap-service{
+  font-size: 14px;
+  float: none;
+  width: 100%;
+}
+.section-service .tit-service{
+  display: block;
+}
+.section-service .group-service .wrap-service~.tit-service{
+  margin-top: 36px;
+}
+.list-service{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1px;
+  color: #888;
+  line-height: 20px;
+}
+.list-item:hover{
+  color: black;
+}
+.inner-footer{
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 37px 0 48px;
+}
+.list-item{
+  margin-top: 12px;
+}
+.tit-service a:hover:before{
+  content: "· ";
+  color: orange;
+}
+.section-down{
+  display: block;
+  margin-top: 120px;
+}
+.group-info{
+  float: left;
+}
+.section-down .group-info:after{
+  display: block;
+  clear:both;
+  content:"";
+}
+.wrap-info{
+  float: left;
+  position: relative;
+  line-height: 18px;
+  font-size: 12px;
+  color: #888;
+}
+.wrap-info:hover{
+  color: black;
+}
+.wrap-info+.wrap-info{
+  margin-left: 24px;
+}
+.wrap-relation{
+  float: right;
+  position: relative;
+  width: 208px;
+}
+.wrap-relation .tit-relation a{
+  display: block;
+  padding: 10px 20px 12px;
+  background: #ccc;
+  border-radius: 24px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -.2px;
+}
+.wrap-relation .tit-relation a .icon-plus{
+  float: right;
+  width: 14px;
+  height: 14px;
+  margin-top: 3px;
+}
+.txt-cp{
+  display: block;
+  font-size: 13px;
+  color: #888;
+  clear: both;
+}

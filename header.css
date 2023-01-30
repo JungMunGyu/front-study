@@ -1,0 +1,76 @@
+header{
+  margin: 0 5rem;
+  position: relative;
+  text-align: center;
+  top: -15px;
+}
+button{
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0 0;
+}
+.button-icon{
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 18px;
+    margin-left: 0.6rem;
+}
+#button-search:hover{
+  background-color: #ccc;
+}
+#button-language:hover{
+  background-color: #ccc;
+}
+#button-dark:hover{
+  background-color: #ccc;
+}
+.Header-logo{
+  display: inline-block;
+  font-size: 1.5rem;
+  position: relative;
+  right: 27rem;
+  cursor: pointer;
+}
+.Header-nav{
+  position: relative;
+  right: 1.5rem;
+  text-align: center;
+  display: inline-block;
+}
+.Header-nav-design-ul{
+  padding: 0;
+  display: flex;
+  color:black;
+}
+.Header-nav-design-ul:hover{
+  color: #ccc;
+}
+.Header-nav-design-ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+}
+.Header-nav-design-ul li:hover{
+  color: black;
+}
+.Header-nav-design-ul a{
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 0.7rem;
+  cursor: pointer;
+}
+.Header-nav-design-a-color:hover{
+  color: #ccc;
+}
+.Header-icon{
+  display: inline-block;
+  position: absolute;
+  right: 1.5rem;
+  top: 2.1rem;
+}
+.icon-search{
+  stroke: black;
+  width: 24px;
+  height: 24px;
+}
